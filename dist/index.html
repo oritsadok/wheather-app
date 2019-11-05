@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="city-input" placeholder="which city whould you like to see?" />
+    <button id="ask-city">
+        <span>Serch for city</span>
+    </button>
+    
+    <div class="data"></div>
+
+
+
+ <button id="save-city">
+        <span>Save city</span>
+    </button>
+
+<script id="result-template" type="text/x-handlebars-template">
+      {{#each allCityData}}
+      <div>{{cityName}}</div>
+      <div>{{temperture}}</div>
+      <div>{{condition}}</div>
+
+      {{/each}}
+</script>
+  <script src="./jquery/dist/jquery.js"></script>
+    <script src="./handlebars/dist/handlebars.js"></script>
+
+    <script src="TempManager.js"></script>
+    <script src="Renderer.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
