@@ -8,6 +8,7 @@ class Renderer {
         const template = Handlebars.compile(source)
         let newHTML = template({ allCityData })
         $(".data").append(newHTML)
+        $(".data").append("Yaniv Is The King")
     }
 }
 
