@@ -6,6 +6,7 @@ const loadPage = async () => {
     await tempmanager.getDataFromDB()
     renderer.renderData(tempmanager.cityData)
     console.log("Ori is Gay.")
+    console.log("check 2")
 
 }
 
