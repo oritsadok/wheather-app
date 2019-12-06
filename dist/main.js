@@ -1,9 +1,13 @@
 const renderer = new Renderer
 const tempmanager = new TempManager
 
+
 const loadPage = async () => {
     await tempmanager.getDataFromDB()
     renderer.renderData(tempmanager.cityData)
+    console.log("Ori is Gay.")
+    console.log("check 2")
+
 }
 
 const handleSearch = async (cityName) =>{
